@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS sales(
     cogs DECIMAL(10,2) NOT NULL,
     gross_margin_pct FLOAT(11,9),
     gross_income DECIMAL(12, 4),
-    rating FLOAT(2, 1)
+    rating INT NOT NULL
 );
 
 SELECT
