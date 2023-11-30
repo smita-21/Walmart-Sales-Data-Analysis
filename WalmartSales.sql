@@ -23,6 +23,13 @@ CREATE TABLE IF NOT EXISTS sales(
     rating INT NOT NULL
 );
 
+
+LOAD DATA INFILE '/home/smita/Desktop/Data Analysis/Walmart_sales_data_analysis/WalmartSalesData_c.csv'
+INTO TABLE sales
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
 SELECT
 	*
 FROM sales;
